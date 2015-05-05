@@ -10,11 +10,11 @@
 }
 
 h1{
-    font-size:15px;
+    font-size:30px;
     font-weight:normal;
 }
 h2{
-    font-size:15px;
+    font-size:30px;
     font-weight:normal;
 }
 
@@ -48,12 +48,12 @@ hr{
     min-height:100px;
     padding:1px;
     text-align:left;
-     font-size: 15px;
+     font-size: 30px;
 }
 .question h2{
-    font-size:15px;
+    font-size:30px;
     font-weight:normal;
-     font-size: 15px;
+     font-size: 30px;
 }
 
 #quiz .options {
@@ -73,7 +73,7 @@ hr{
             //font-family: 'Segoe UI', Calibri, Arial;
             //font-weight:600;
         text-align: left;
-        font-size: 15px;
+        font-size: 30px;
         font-weight:normal;
         margin: 2px;
         //min-width: 512px;
@@ -131,24 +131,24 @@ div.review > div {
     min-height:100px;
     padding:1px;
     text-align:left;
-     font-size: 15px;
+     font-size: 30px;
 }
 
 .result-question{
     background-color:#eee;
     margin:4px;
     padding:0px;
-    font-size: 15px;
+    font-size: 30px;
 }
 .result-question h3 {
-    font-size:15px;
+    font-size:30px;
     font-weight:normal;
 }
 #quiz .result-options {
     margin: auto;
     max-width: auto;
     text-align: left;
-    font-size:15px;
+    font-size:30px;
 }
 #quiz .result-options > div{
     display:inline-block;
@@ -205,15 +205,15 @@ div.review > div {
 }
 
 .create-quiz .options > div{
-    margin-left:15px;
+    margin-left:30px;
 }
 .create-quiz .options input[type=checkbox]{
     border: 1px solid #262626;
     display: inline-block;
-    height:15px;
+    height:30px;
     margin-top:10px;
     margin-bottom:0;
     padding:0;
-    width:15px;
+    width:30px;
     -webkit-appearance:checkbox;    
 }
