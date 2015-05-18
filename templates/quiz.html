@@ -1,9 +1,8 @@
-<br>
-
-<div  style="width:auto">
+<div style="border-style: outset;">
+<div  style="width:auto; padding:10px;">
     <div class="row label-danger " style="width:auto;font-size:auto;font-style:italic; font-weight:bold; vertical-align:middle; margin-left:1px;margin-right:1px;">
         <img src="logo.png" style="height:50px;width:100px;"  />
-        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
         <span style="font-size:auto;font-style:italic; font-weight:bold; vertical-align:middle" >
 
             <b ng-show="mode == 'quiz'">
@@ -13,7 +12,7 @@
                     <option value="data/3AbstractClass.js">Day 3 </option>
                 </select>
             </b>
-            <textarea readonly="readonly" class="btn-danger" ng-model="quiz.name" style="font-weight:bold; resize:none;vertical-align:middle; text-align:center;size :auto" rows="2" cols="50"></textarea>           
+            <textarea readonly="readonly" class="btn-danger" ng-model="quiz.name" style="font-weight:bold; resize:none;vertical-align:middle; text-align:center;size :auto" rows="2" cols="25"></textarea>           
         </span>
     </div>
     <!--        <div class="header-left">
@@ -50,21 +49,21 @@
                     </div>
                 </div>
             </div>
-            <div class="quizNav well-sm" style="width:auto;padding-top:2px;" >
+            <div class="quizNav well-sm" style="vertical-align:middle;width:auto;padding-top:2px; background-color:aliceblue" >
                 <div>
                     <!--<button class="btn btn-default" ng-show="config.allowBack" ng-click="goTo(1);">First</button>-->
-                    <button   class="btn btn-primary  btn-small" ng-init ="prevIsDisabled = true" ng-disabled="prevIsDisabled" ng-show="config.allowBack" ng-click="goTo(currentPage - 1);">Prev</button>
+                    <button   class="btn btn-primary btn-xs" ng-init ="prevIsDisabled = true" ng-disabled="prevIsDisabled" ng-show="config.allowBack" ng-click="goTo(currentPage - 1);">Prev</button>
 
-                    <button class="btn btn-primary btn-small" ng-disabled="nextIsDisabled"ng-click="goTo(currentPage + 1);">Next</button>
+                    <button class="btn btn-primary btn-xs" ng-disabled="nextIsDisabled"ng-click="goTo(currentPage + 1);">Next</button>
                     <!--                <button class="btn btn-default" ng-show="config.allowBack" ng-click="goTo(totalItems);">Last</button>-->
                     <span style="text-align:center;padding-top:5px;size:auto" ng-show="mode != 'result'">
                         <!--        <button class="btn btn-primary" ng-click="mode = 'quiz'">Quiz</button> -->
-                        <button class="btn btn-danger small" ng-show="showReview" ng-click="mode = 'review';
+                        <button class="btn btn-danger btn-xs" ng-show="showReview" ng-click="mode = 'review';
                             //showSubmitButton();
                             showSubmit = true;
                             showReview = false;">Review</button> 
                         <!--        <button class="btn btn-danger small" ng-init ="quizMessage = 'Take Next Day Quiz!'" ng-show="showSubmit" ng-click="onSubmit();">Submit</button>-->
-                        <button class="btn btn-danger small" ng-init ="quizMessage = 'Take Next Day Quiz!'" ng-show="showSubmit" ng-click="onSubmit();">Submit</button>
+                        <button class="btn btn-danger btn-xs" ng-init ="quizMessage = 'Take Next Day Quiz!'" ng-show="showSubmit" ng-click="onSubmit();">Submit</button>
                     </span>
                 </div>
                 <!-- Disabling Pagination
@@ -77,7 +76,7 @@
             </div>
             <br>
             <div>
-             <button class="btn btn-danger small" ng-init ="quizMessage = 'Take Next Day Quiz!'" ng-show="showSubmit" ng-click="onSubmit();">Submit</button>
+             <button class="btn btn-danger btn-xs" ng-init ="quizMessage = 'Take Next Day Quiz!'" ng-show="showSubmit" ng-click="onSubmit();">Submit</button>
             </div>
         </div>
         <div class="result" ng-show="mode == 'result'" style="width:auto;padding:10px;">
@@ -97,8 +96,8 @@
                 </div>
                 <br>
             </div>
-            <div class="well" style="text-align:center;font-weight:bold;">
-                <button class="btn btn-danger" ng-click="mode = 'quiz';
+            <div class="well " style="text-align:center;font-weight:bold;">
+                <button class="btn btn-danger btn-xs" ng-click="mode = 'quiz';
                     swapQuiz();
                     loadQuiz(quizName);
                     prevIsDisabled = true;
@@ -115,4 +114,5 @@
                 <button class="btn btn-danger small" ng-init ="quizMessage = 'Take Next Day Quiz!'" ng-show="showSubmit" ng-click="onSubmit();">Submit</button>
             </div>-->
     </div>
+</div>
 </div>
