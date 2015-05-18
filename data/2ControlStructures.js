@@ -1,8 +1,8 @@
 {
 "quiz": {
 "Id": 2,
-        "name": "Control structures,Inheritance,Static members",
-        "description": "Control structures,Inheritance,Static members"
+        "name": "Control structures, Inheritance, Static members",
+        "description": "Control Structures & Inheritance"
         },
         "questions": [{
         "Id": 1010,

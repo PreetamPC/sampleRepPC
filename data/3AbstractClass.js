@@ -2,7 +2,7 @@
 "quiz": {
 "Id": 3,
         "name": "Abstract class,Interfaces,final keyword,Polymorphism",
-        "description": "Abstract class,Interfaces,final keyword,Polymorphism"
+        "description": "Abstract Classes, Interfaces & Polymorphism"
         },
         "questions": [{
         "Id": 1010,

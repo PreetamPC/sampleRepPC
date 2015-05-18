@@ -2,7 +2,7 @@
 "quiz": {
 "Id": 1,
         "name": "Introduction to Java , Java Basics",
-        "description": "Introduction to Java , Java Basics"
+        "description": "Introduction to Java"
         },
         "questions": [{
         "Id": 1010,

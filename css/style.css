@@ -14,7 +14,8 @@ h1{
     font-weight:normal;
 }
 h2{
-    font-size:30px;
+    //font-size:30px;
+    font-size:auto;
     font-weight:normal;
 }
 
@@ -48,19 +49,23 @@ hr{
     min-height:100px;
     padding:1px;
     text-align:left;
-     font-size: 30px;
+     //font-size: 30px;
+     font-size:auto;
 }
 .question h2{
-    font-size:30px;
+    //font-size:30px;
+    font-size:auto;
     font-weight:normal;
-     font-size: 30px;
+     //font-size: 30px;
+     font-size:auto;
 }
 
 #quiz .options {
     //margin: auto;
     //max-width: 800px;
     text-align: left;
-    font-size:12px;
+    //font-size:12px;
+    font-size:auto;
 }
 #quiz .options > div{
     //display:inline-block;
@@ -73,7 +78,8 @@ hr{
             //font-family: 'Segoe UI', Calibri, Arial;
             //font-weight:600;
         text-align: left;
-        font-size: 30px;
+        //font-size: 30px;
+        font-size:auto;
         font-weight:normal;
         margin: 2px;
         //min-width: 512px;
@@ -131,28 +137,33 @@ div.review > div {
     min-height:100px;
     padding:1px;
     text-align:left;
-     font-size: 30px;
+     //font-size: 30px;
+     font-size:auto;
 }
 
 .result-question{
     background-color:#eee;
     margin:4px;
     padding:0px;
-    font-size: 30px;
+    //font-size: 30px;
+    font-size:auto;
 }
 .result-question h3 {
-    font-size:30px;
+    //font-size:30px;
+    font-size:auto;
     font-weight:normal;
 }
 #quiz .result-options {
     margin: auto;
     max-width: auto;
     text-align: left;
-    font-size:30px;
+    //font-size:30px;
+    font-size:auto;
 }
 #quiz .result-options > div{
     display:inline-block;
-    font-size:14px;
+    //font-size:14px;
+    font-size:auto;
 }
     #quiz .result-options > div > label {
         //background-color: #ccd2dc;
@@ -163,7 +174,8 @@ div.review > div {
         font-weight:normal;
         margin: 5px;
         text-align: left;
-        font-size: 14px;
+        //font-size: 14px;
+        font-size:auto;
         //margin: 6px;
         //min-width: 300px;
         //padding: 6px 12px;
@@ -175,7 +187,8 @@ div.review > div {
         border:1px solid #ccc;
         height:16px;
         width:16px;
-        font-size:13px;
+        //font-size:13px;
+        font-size:auto;
     }
 
     .result-correct{
