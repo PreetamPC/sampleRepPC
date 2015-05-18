@@ -55,6 +55,7 @@
                 if ($scope.mode == 'review')
                 {
                     $scope.showReview = true;
+                    $scope.showSubmit = true;
                 }
                 ;
                 //console.log(index);
@@ -149,6 +150,7 @@
         };
 
         $scope.swapQuiz = function () {
+            //alert($scope.showSubmit);
             if ($scope.quizName == 'data/1IntroductionToJava.js') {
                 $scope.quizName = 'data/2ControlStructures.js';
                 $scope.quizMessage = 'Take Next Day Quiz!';
@@ -165,5 +167,7 @@
             ;
 
         };
+        
+       
 
     }]);
