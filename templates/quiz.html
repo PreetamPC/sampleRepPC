@@ -1,29 +1,43 @@
-<div class="header">
-    <div class="row">
-        <div class="header-right">
-            <img src="logo.png" style="padding:5px" />
+<div class="header" class="margin:2px;">
+    <div class="row label-danger">
+        <img src="logo.png" style="height:75px;width:125px;"  />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         <span class="header-right" style="font-size:30px;font-style:italic; vertical-align:middle" ng-show="mode == 'quiz'">
+             
+             <b>&nbsp;&nbsp;
+                <select style="font-size:30px; vertical-align : middle" id="quizList" ng-model="quizName" ng-change="loadQuiz(quizName)">
+                    <option value="data/1IntroductionToJava.js">Day 1 </option>
+                    <option value="data/2ControlStructures.js">Day 2 </option>
+                    <option value="data/3AbstractClass.js">Day 3 </option>
+                </select>
+            </b>
+             {{quiz.name}}
+             
+        </span>
+    </div>
+<!--        <div class="header-left">
+            <img src="logo.png" style="padding:5px;height:75px;width:125px;"  />
         </div>&nbsp;&nbsp;&nbsp;
         <span class="header-left well" style="padding:5px;background-color:#e1edf7 " ng-show="mode == 'quiz'">
-            <!-- In actual application, you may wish to load the quiz List using angular service. -->
+             In actual application, you may wish to load the quiz List using angular service. 
             <b>Select Day &nbsp;:&nbsp;
                 <select style="font-size:13px;" id="quizList" ng-model="quizName" ng-change="loadQuiz(quizName)">
                     <option value="data/1IntroductionToJava.js">Day 1 </option>
                     <option value="data/2ControlStructures.js">Day 2 </option>
                     <option value="data/3AbstractClass.js">Day 3 </option>
                 </select> 
-        </span>
-        <br>
-        <br>&nbsp;&nbsp;&nbsp;
-        <div class="label label-danger" style="font-size:18px;font-style:italic" ng-show="mode == 'quiz' || mode == 'review' || mode == 'result'">
+        </span>-->
+<br>
+<!--        <div class="label label-danger" style="font-size:30px;font-style:italic" ng-show="mode == 'quiz' || mode == 'review' || mode == 'result'">
             {{quiz.name}}
-        </div>
+        </div>-->
     </div>
 </div>
-<br>
+
 <div id="quiz">
     <div ng-show="mode == 'quiz'">
         <div ng-repeat="question in filteredQuestions">
-            <div class="label label-success " style="font-size:12px;align:center;">Question {{currentPage}} of {{totalItems}}.</div>
+            <div class="label label-success " style="font-size:25px;align:center;">Question {{currentPage}} of {{totalItems}}.</div>
             <div class="question">
                 <h2>{{currentPage}}. {{question.Name}}</h2>
                 <div class="options">
